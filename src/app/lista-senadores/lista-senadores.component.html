@@ -1,0 +1,16 @@
+<nav>
+  <h1>GASTOS DE SENADORES | 2019</h1>
+</nav>
+
+<body class="container">
+  <div class="title">
+    <h2>Lista de senadores</h2>
+    <p>Selecione para checar gastos</p>
+  </div>
+
+  <div class="container-list">
+    <ul *ngFor="let senador of senadores">
+      <a [routerLink]="['/senadores', senador.id]"><li>{{senador.nomeSenador | titlecase }}</li></a>
+    </ul>
+  </div> 
+</body>
